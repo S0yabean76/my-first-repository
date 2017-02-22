@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Layout Challenge</title>
+	<style type="text/css">
+
+		#container{
+			margin-right: auto;
+			margin-left: auto;
+			width: 960px;
+			/*background-color: #AA4639;*/
+			padding: 10px;
+			border-radius: 10px;
+			font-size: 0;
+		}
+
+		.box{
+			display: block;
+			width: 100%;
+			background-color: #81BBC9;
+			margin: 0 0 10px 0;
+			font-size: 16px;
+			font-family: Arial;
+			border-radius: 10px;
+			text-align: center;
+			padding: 30px 0;
+		}
+		
+		#sidebar{
+			display: inline-block;
+			height: 320px;
+			width: 300px;
+			margin-right: 5px;
+		}
+
+		#content{
+			display: inline-block;
+			height: 320px;
+			width: 650px;
+			margin-left: 5px;
+		}
+
+	</style>
+</head>
+<body>
+<div id="container">
+<div class="box">
+	<h1>Header</h1>
+</div>
+<div id="sidebar" class="box">
+	<h2>Sidebar<h2>
+</div>
+<div id="content" class="box">
+	<h2>Content</h2>
+</div>
+<div class="box">
+	<h2>Footer</h2>
+</div>
+</div>
+</body>
+</html>
