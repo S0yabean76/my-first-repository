@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Layout Challenge</title>
+	<style type="text/css">
+
+		#container{
+			margin-right: auto;
+			margin-left: auto;
+			width: 960px;
+			/*background-color: #AA4639;*/
+			padding: 10px;
+			border-radius: 10px;
+			font-size: 0;
+			position: relative;
+		}
+
+		.box{
+			position: relative;
+			display: block;
+			width: 100%;
+			background-color: #81BBC9;
+			margin-bottom: 10px;
+			font-size: 20px;
+			font-family: Arial;
+			border-radius: 10px;
+			text-align: center;
+			padding: 30px 0;
+		}
+		
+		.sidebar{
+			-ms-box-sizing:border-box;
+			box-sizing: border-box;
+			display: inline-block;
+			width: 474px;
+			margin-right: 5px;
+			padding-left: 40px;
+			padding-right: 40px;
+			text-align: left;
+			position: relative;
+		}
+
+		.content{
+			-ms-box-sizing:border-box;
+			box-sizing: border-box;
+			display: inline-block;
+			width: 474px;
+			margin-left: 5px;
+			padding-left: 40px;
+			padding-right: 40px;
+			text-align: left;
+			position: relative;
+		}
+
+		#linkToTop{
+			position: absolute;
+			bottom: 0px;
+			right: -80px;
+		}
+
+
+		#sideLinkToTop{
+			position: absolute;
+			bottom: 0px;
+			left: -80px;
+		}
+
+		p {
+			padding-bottom: 50px;
+		}
+
+		#header{
+			border: solid;
+			top: 0px;
+			right: 0px;
+			z-index: 100;
+		}
+
+		body{
+			background-image: url(shutterstock_157857116.jpg);
+			background-size: cover;
+		}
+
+	</style>
+</head>
+<body>
+<div id="container">
+<div id="header" class="box">
+	<h1>Header</h1>
+</div>
+<div class="box sidebar">
+	<h2>Sidebar</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat.</p>
+	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<img id="sideLinkToTop" src="arrow.png" alt="Arrow">
+</div>
+<div class="box content">
+	<h2>Content</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. </p>
+	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<img id="linkToTop" src="arrow.png" alt="Arrow">
+</div>
+<div class="box sidebar">
+	<h2>Sidebar</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat.</p>
+	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<img id="sideLinkToTop" src="arrow.png" alt="Arrow">
+</div>
+<div class="box content">
+	<h2>Content</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. </p>
+	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<img id="linkToTop" src="arrow.png" alt="Arrow">
+</div>
+<div class="box">
+	<h2>Footer</h2>
+</div>
+</div>
+</body>
+</html>
