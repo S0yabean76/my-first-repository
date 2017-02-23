@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		div{
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			-moz-box-sizing:border-box;
+			box-sizing: border-box;
+			top: 0px;
+			width: 500px;
+			background-color: green;
+			margin: 10px;
+		}
+
+		#sepiafrog{
+			float: right;
+			padding:10px;
+			-webkit-filter:sepia(1);
+		}
+
+
+		#grayfrog{
+			float: right;
+			padding:10px;
+			-webkit-filter: grayscale(0.8);
+		}
+
+		#opacityfrog{
+			float: right;
+			padding:10px;
+			-webkit-filter: opacity(0.1);
+		}
+
+		#multifrog{
+			float: right;
+			padding:10px;
+			-webkit-filter: opacity(0.5) blur(2px) contrast(0.5);
+		}
+
+	</style>
+	<title>All about Frogs and other Randomness</title>
+</head>
+<body>
+	<div>
+		<h2>Sepia</h2>
+		<img id="sepiafrog" src="frog.jpg" alt="frog" height="250" width="250">
+	</div>
+	<div>
+		<h2>Grayscale</h2>
+		<img id="grayfrog" src="frog.jpg" alt="frog" height="250" width="250">
+	</div>
+	<div>
+		<h2>Opacity</h2>
+		<img id="opacityfrog" src="frog.jpg" alt="frog" height="250" width="250">
+	</div>
+	<div>
+		<h2>Multi</h2>
+		<img id="multifrog" src="frog.jpg" alt="frog" height="250" width="250">
+	</div>
+</body>
+</html>
