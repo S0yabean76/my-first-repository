@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Layout Challenge</title>
+	<style type="text/css">
+
+		#container{
+			margin-right: auto;
+			margin-left: auto;
+			width: 960px;
+			/*background-color: #AA4639;*/
+			padding: 10px;
+			border-radius: 10px;
+			font-size: 0;
+		}
+
+		.box{
+			display: block;
+			width: 100%;
+			background-color: #81BBC9;
+			margin-bottom: 10px;
+			font-size: 20px;
+			font-family: Arial;
+			border-radius: 10px;
+			text-align: center;
+			padding: 30px 0;
+		}
+		
+		#sidebar{
+			-ms-box-sizing:border-box;
+			box-sizing: border-box;
+			display: inline-block;
+			width: 474px;
+			margin-right: 5px;
+			padding-left: 40px;
+			padding-right: 40px;
+			border: solid 5px #000;
+		}
+
+		#content{
+			-ms-box-sizing:border-box;
+			box-sizing: border-box;
+			display: inline-block;
+			width: 474px;
+			margin-left: 5px;
+			padding-left: 40px;
+			padding-right: 40px;
+			border: solid 5px #000;
+		}
+
+	</style>
+</head>
+<body>
+<div id="container">
+<div class="box">
+	<h1>Header</h1>
+</div>
+<div id="sidebar" class="box">
+	<h2>Sidebar</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat.</p>
+	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div id="content" class="box">
+	<h2>Content</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. </p>
+	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="box">
+	<h2>Footer</h2>
+</div>
+</div>
+</body>
+</html>

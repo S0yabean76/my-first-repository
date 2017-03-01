@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Abby's Form</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    	
+    	body{
+         font-family: 'Roboto', sans-serif;
+      	}
+
+      	#container{
+      		width:400px;
+      		margin: auto;
+      	}
+
+    	fieldset{
+            width: auto;
+            border-radius: 10px;
+            background-color: #d7e2f4;
+        }
+
+        label{
+        	width: 100px;
+        	text-align: right;
+        	display: inline-block;
+        	padding: 10px;
+        }
+
+        input{
+        	border-radius: 4px;
+        	width: 200px;
+        }
+
+        .submit{
+        	margin-top: 10px;
+        	
+        }
+
+        legend{
+        	border: 1px solid;
+        	border-radius: 5px;
+        	padding: 10px;
+        	background-color: white;
+        }
+
+        #note{
+        	padding:20px;
+        	font-size: 10px;
+        }
+
+        input:focus{
+        	background-color: #f4b342;
+        }
+    </style>
+<body>
+    <div id="container">
+        <form id="form1" action="server_side_script.php" method="get">
+        	<fieldset>
+      			<legend>Registration</legend>
+
+          		<label>* Firstname:</label>
+          			<input type="text" name="fname" placeholder="Enter your first name" required="" /><br>
+           		<label for="Email">* Email:</label>
+           			<input type="email" name="Email" placeholder="Enter your email here" required="" autofocus /><br>
+           		<label for="Date">Date:</label>
+           			<input type="date" name="Date"/>
+           		<label for="Passport">Passport:</label>
+           			<input type="text" name="Passport" placeholder="Passport Number" pattern="[0-9]{9}" title="Please enter a 9-digit number. Letters are not valid"/>
+           		<label for="tel">Telephone</label>
+           			<input type="tel" name="tel" placeholder="Enter tel number here" pattern="[0-9]{5}[ ]{1}[0-9]{6}" title="Please enter a valid mobile number including prefix"/>
+           		<label for="Postcode">Postcode:</label>
+           			<input type="text" name="Postcode" placeholder="UK postcode" pattern="[A-Za-z]{1,2}[0-9]{1,2}[ ]{1}[0-9]{1,2}[A-Za-z]{1,2}" title="UK postcode"/>
+           		<label for="CreditCard">Credit Card:</label>
+           			<input type="text" name="CreditCard" placeholder="16-digit number" pattern="[0-9]{16}" title="Please enter a 16-digit number without spaces"/>
+           		<label for="URL">Website:</label>
+           			<input type="url" name="URL" placeholder="Enter URL here"/>
+           		<label for="Age">Age:</label>
+           			<input type="number" name="Age" placeholder="Age - must be over 18" min="18" max="120">
+           		<label for="Password">Password:</label>
+           			<input type="password" name="Password" placeholder="Must be 6 digits long" pattern="[A-Za-z0-9]{6}"/>
+           		<label for="Checkbox">Would you like:</label><br>
+           			<input type="Checkbox" name="MenuChoice" value="Starter"/>Starter
+           			<input type="Checkbox" name="MenuChoice" value="Main"/>Main
+           			<input type="Checkbox" name="MenuChoice" value="Dessert"/>Dessert
+           		<label for="Gender">Gender:</label><br>
+           			<input type="radio" name="Gender" value="Male"/>Male
+           			<input type="radio" name="Gender" value="Female"/>Female
+           			<input type="radio" name="Gender" value="Other"/>Other<br>
+           		<label for="Zodiac">Zodiac Sign</label>
+           		<select id="Zodiac">
+           			<optgroup label="Earth"></optgroup>
+           				<option value="Taurus">Taurus</option>
+           				<option value="Virgo">Virgo</option>
+           				<option value="Capricorn">Capricorn</option>
+           			<optgroup label="Fire"></optgroup>
+           				<option value="Aries">Aries</option>
+           				<option value="Leo">Leo</option>
+           				<option value="Sagittarius">Sagittarius</option>
+           		</select><br>
+           		<label for="Music">Music Genre</label>
+           			<input list="Music" name="Music">
+           				<datalist id="Music">
+           					<option value="Country">Country</option>
+           					<option value="Pop">Pop</option>
+           					<option value="Rock">Rock</option>
+           				</datalist>
+           		<label for="submit"></label>
+           			<input class="submit" type="submit" name="submit"/>
+           		<div id="note">* Denotes required field</div>
+           	</fieldset>
+        </form>
+    </div>
+   </body>
+</html>

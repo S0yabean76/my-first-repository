@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		div{
+			height: 100px;
+			width: 800px;
+			text-align: center;
+			padding: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 5px;
+			}
+
+		#lineardiv{
+			background: linear-gradient(to right, #5F2C82, #3487AD);
+			}
+
+		#transdiv{
+			background: linear-gradient(45deg, rgba(250,250,250,0.2), red);
+		}
+
+		#multidiv{
+			background: linear-gradient(to right, #ed0404 25%, #eded04 50%, #0e9b01 75%, #0651db 100%);
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+
+		#radialdiv{
+			background: radial-gradient(#5f2c82, #3498db);
+			box-shadow: 10px 10px 5px #888888;
+		}
+
+		#h1shadow{
+			text-shadow: 10px 10px 5px #888888;
+		}
+	</style>
+	<title>Gradients</title>
+</head>
+<body>
+	<div id="lineardiv">
+		<h1>A box with Linear Gradiant</h1>
+	</div>
+	<div id="transdiv">
+		<h1>A box with a transparent gradient</h1>
+	</div>
+	<div id="multidiv">
+		<h1>A box with multiple stops</h1>
+	</div>
+	<div id="radialdiv">
+		<h1 id="h1shadow">A box with a radial gradient</h1>
+	</div>
+</body>
+</html>
