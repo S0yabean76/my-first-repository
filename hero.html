@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Superman</title>
+	<script>
+		var hero = {
+			firstName:"Clark",
+			secondName:"Kent",
+			title:"Superman"
+		};
+		/*console.log(hero.firstName + " " + hero.secondName + " is " + hero.title);
+		console.log(hero["firstName"] + " " + hero["secondName"] + " is also " + hero["title"] + "!!");*/
+
+		whoAmI: function(){
+			return hero["firstName"] + " " + hero["secondName"] + " is still " + hero["title"] + "!!"
+		};
+		console.log(hero.whoAmI());
+	</script>
+</head>
+
+</html>
