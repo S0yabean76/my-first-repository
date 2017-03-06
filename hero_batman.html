@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Superman</title>
+	<script>
+
+		var Hero = function(firstName, secondName, title, homeCity){
+			this.firstName = firstName;
+			this.secondName = secondName;
+			this.title = title;
+			this.homeCity = homeCity;
+		}
+
+		console.log(Hero.title);
+
+		var superman = new Hero("Clark", "Kent", "Superman", "Metropolis");
+		var batman = new Hero("Bruce", "Wayne", "Batman", "Gotham");
+		console.log(superman.title);
+		console.log(batman.title);
+
+		Hero.prototype.isWearingSuit = false;
+		var superman = new Hero("Clark", "Kent", "Superman", "Metropolis");
+		console.log(superman.isWearingSuit);
+
+		var batman = new Hero("Bruce", "Wayne", "Batman", "Gotham");
+		batman.isWearingSuit = true;
+		console.log(batman.isWearingSuit);
+			/*powers: [
+				{
+					name: "flight",
+					description: "can fly away!"
+				},
+				{
+					name: "super strenth",
+					description: "can lift heavy ojects!"
+				},
+				{
+					name: "x-ray vision",
+					description: "can see through solid objects!"
+				},
+				{
+					name: "super speed",
+					description: "can move really, REALLY fast!"
+				},
+				{
+					name: "heat vision",
+					description: "can shoot lasers from his eyes!"
+				}
+			],
+			enemies: [
+				{
+					name: "General Zod",
+					homePlanet: "Krypton"
+				},
+				{
+					name: "Lex Luther",
+					homePlanet: "Earth"
+				}
+			],
+			isWearingSuit: false,
+			suitUp: function(){
+				if (this.isWearingSuit){
+					return "I'm already wearing my suit!";
+				} else {
+					this.isWearingSuit = true;
+					return "Looks like Metropolis is in trouble! Better suit up!";
+				}
+			},
+			listEnemies: function(){
+				this.enemies.forEach(function(enemy){
+					console.log(enemy["name"] + " is from " + enemy["homePlanet"] + ".");
+				});
+			},
+			listPowers: function(){
+				var _this = this;
+				this.powers.forEach(function(power){
+					console.log(power["name"] + ": So " + _this.title + " " + power["description"]);
+				});
+			}
+		}
+
+		console.log(superman.suitUp);
+		console.log(superman.isWearingSuit);
+		superman.listEnemies();
+		superman.listPowers();*/
+	</script>
+</head>
+
+</html>
