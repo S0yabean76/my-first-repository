@@ -12,3 +12,5 @@ So far I've learned how to
 5. Creating README files
  
 [I learned all this from Code Institute!](http://codeinstitute.net)
+
+NB: This repository is my first foray into coding. It's probably not pretty, or the most efficient - but we all have to start somewhere right?!
